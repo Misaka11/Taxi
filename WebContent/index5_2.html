@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Home</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <!-- VENDOR CSS -->
+    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/vendor/linearicons/style.css">
+    <link rel="stylesheet" href="assets/vendor/chartist/css/chartist-custom.css">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- FOR DEMO PURPOSES ONLY. You should remove this in your project -->
+    <link rel="stylesheet" href="assets/css/demo.css">
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+    <!-- ICONS -->
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon.png">
+    <!--   <link rel="stylesheet" type="text/css" href="css/style22.css" -->
+ <script src="js/function.js"></script>
+ <script src="js/app.js"></script>
+ <script src="js/heatmap.js"></script>
+ <script src="js/heatmap.min.js"></script>
+ <script src="js/DatePicker.js"></script>
+ <link rel="stylesheet" href="css/demo-center.css"/>
+ 
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/jquery.nouislider.js"></script>
+    <script src="js/jquery.nouislider.min.js"></script>
+
+</head>
+
+<body>
+    <!-- WRAPPER -->
+    <div id="wrapper">
+
+        <!-- LEFT SIDEBAR -->
+        <div id="sidebar-nav" class="sidebar">
+            <div class="sidebar-scroll">
+                <nav>
+                    <ul class="nav">
+                        <li><a href="index.html" class=""><i class="lnr lnr-home"></i> <span>实时显示车辆</span></a></li>
+                        <li><a href="index1.html" class=""><i class="lnr lnr-code"></i> <span>查询历史车辆</span></a></li>
+                        <li><a href="index2.html" class=""><i class="lnr lnr-chart-bars"></i> <span>查询历史轨迹</span></a></li>
+                        <li><a href="index3.html" class=""><i class="lnr lnr-cog"></i> <span>需求预测分析</span></a></li>
+                        <li><a href="index4.html" class=""><i class="lnr lnr-alarm"></i> <span>判断是否绕路</span></a></li>
+                        <li>
+                            <a href="#subPages" data-toggle="collapse" class="collapsed"><i class="lnr lnr-file-empty"></i> <span>数据统计分析</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
+                            <div id="subPages" class="collapse ">
+                                <ul class="nav">
+                                    <li><a href="index5_1.html" class="">驾驶员和生产信息</a></li>
+                                    <li><a href="index5_2.html" class="active">营运情况分析</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+      
+        <!-- END LEFT SIDEBAR -->
+          <!-- MAIN -->
+        <div class="main">
+            <!-- MAIN CONTENT -->
+            <div class="main-content">
+                <div class="container-fluid">
+                    <h3 class="page-title">选择月份</h3>
+                    <input id="display_time" onclick="setmonth(this)" />
+                    <button id="display" class="button" onclick="searchRevenue()">提交</button>
+                    <h3 class="page-title" id="zonge">营业总额</h3>
+                    <h3 class="page-title">Tables</h3>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <!-- TABLE STRIPED -->
+                            <div class="panel">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">收入排名</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <table class="table table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>排名</th>
+                                                <th>车牌号</th>
+                                                <th>营业额</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id = "tb">
+                                            
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <!-- END TABLE STRIPED -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END MAIN CONTENT -->
+        </div>
+        <!-- END MAIN -->
+    </div>
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/vendor/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="assets/vendor/jquery.easy-pie-chart/jquery.easypiechart.min.js"></script>
+    <script src="assets/vendor/chartist/js/chartist.min.js"></script>
+    <script src="assets/scripts/klorofil-common.js"></script>
+
+</body>
+
+</html>
